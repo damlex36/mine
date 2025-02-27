@@ -1,0 +1,50 @@
+ .facility-head{
+    position: relative;
+    background:
+    linear-gradient(
+        to right,
+        rgba($primary-color, 0.4),
+        rgba($primary-color, 0.3)
+      ), 
+    url('../pic/headbg.png');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+ }
+ .headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+& h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+& p{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ }
+ .facility-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+& .galleries{
+& .gallery1{
+    padding: 20px;
+& a{
+& img{
+        width: 75%;       
+&:hover{
+    transform: scale(1.1); 
+}
+}
+}
+}
+}
+ }

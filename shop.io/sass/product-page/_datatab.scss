@@ -1,0 +1,247 @@
+@use '../variables/variable' as *;
+
+/*for datatab*/
+.data-tab{
+    position: relative;
+& .product-btn{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+& .tab-button{
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    font-weight: 400;
+&.active{
+    border-bottom: 2px solid black;
+    font-weight: 600;
+}
+}
+}
+/*product details*/
+& .product-content{
+    display: none;
+&.active{
+    display: block;
+}
+}
+& .product-content1{
+    padding: 0 20px;
+& h1{
+  font-size: 17px;
+  font-weight: bold;
+}
+& .details{
+& p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 500px;
+}
+}
+}
+/*second content reviews*/
+.product-content2{
+    padding:  10px;
+& .review-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*first row*/
+& .first-row{
+    padding: 20px;
+    margin-top: -15px;
+& span{
+    font-size: 17px;
+    font-weight: bold;
+}
+& .amount{
+    font-weight:normal;
+    font-size: 13px;
+    color: gray;
+}
+}
+/*second row*/
+.second-row{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+& .latest{
+    margin-right: 30px;
+    margin-top: px;
+    background-color: rgb(228, 228, 228);
+    color: $background-color;
+    padding: 10px 60px 10px 10px ;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+&:hover{
+    background-color:$background-color;
+    color: $primary-color;
+}
+& i{
+    position: absolute;
+    right: 180px;
+    top: 275px;
+}
+}
+/*for latest toggle content hover*/
+& .latest-hover{
+    display: none;
+    position: absolute;
+    top: 305px;
+    right: 135px;
+    background-color: $primary-color;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 0  0 0;
+    border-radius: 10px;
+    z-index: 1;
+:hover{
+    color: white;
+}
+&.latest{
+    display: block;
+}
+& ul{
+    list-style: none;
+    right:15px ;
+    position: relative;
+    width: 100%;
+& li{
+    border-bottom: 1px solid gray;
+   
+& a{
+    color:gray;
+    text-decoration: none;
+    font-size: 13px;
+}
+}
+}
+}
+/*writse review*/
+& .write-review{
+   margin-right: 20px;
+    background-color: $background-color;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+}
+}
+/*and comments*/
+& .comment{
+    margin-top: 20px;
+& .comment-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+& .review-comment_card{
+
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+& .review-comment_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+& .comment-stars{
+&  i{
+    color: #FFD700;
+}
+}
+& .fa-ellipsis-vertical{
+    color: #aaa;
+    cursor: pointer;
+}
+}
+& .review-comment_body{
+& h3{
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+& .verified i{
+    color: #00C851;
+}
+}
+& p{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+}
+& .review-comment_footer{
+& small{
+    font-size: 12px;
+    color: #888;
+}
+}
+}
+}
+& .loadMore{
+    background-color: transparent;
+    text-align: center;
+    width: 100px;
+    margin-left: 550px;
+& p{
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+}
+}
+}
+/*faqs*/
+& .product-content3{
+    width: 65%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 230px;
+& .faq-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+& .faq-container{
+    &.active{
+        height: 200px;
+    }
+& .faq-question{
+    padding: 18px 0;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom:1px solid black ;
+    position: relative;
+&::after{
+    content: '+';
+    position: absolute;
+    right: -5px;
+}
+}
+
+& .faq-answer{
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100% ;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+}
+}
+}

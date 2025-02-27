@@ -1,0 +1,85 @@
+.book{
+    position: relative;
+    left: 520px;
+    top: 340px;
+    background-color: $click-color;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+
+& h1{
+    font-size: 2rem;
+& a{
+    color: white;
+    text-decoration: none;
+}
+}
+}
+/*phone size*/
+@media screen and (max-width:$mobile){
+    .book{
+        position: relative;
+        left:120px;
+        top: 290px;
+        font-size: 7px;
+        background-color: $click-color;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        width:50%;
+    
+    & h1{
+    
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+    }
+    }
+}
+/*largephone size*/
+@media (max-width: $largeMobileMax){
+    .book{
+        position: relative;
+        left:100px;
+        top: 290px;
+        font-size: 7px;
+        background-color: $click-color;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        width:50%;
+    
+    & h1{
+        font-size: 20px;
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+    }
+    }
+}
+/*for ipad*/
+@media (min-width: 577px) and 
+(max-width:1025px){
+    .book{
+        position: relative;
+        left:208px;
+        top: 320px;
+        font-size: 7px;
+        background-color: $click-color;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        width:30%;
+    
+    & h1{
+    
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+    }
+    }
+}

@@ -1,0 +1,138 @@
+@use '../variables/variable' as *;
+.overall{
+    max-width: 100%;
+}
+.feedback{
+    position: relative;
+    background-color:$background-color;
+    padding: 40px;
+    width: 89%;
+    left: 87px;
+    top: 75px;
+    height: 200px;
+    border-radius: 15px;
+@media only screen and (max-width:$mobile){
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    padding: 40px 0px;
+}
+
+&-container{
+    margin-top: 17px;
+& .feedback-text{
+    position: absolute;
+    color: $primary-color;
+    left: 70px;
+    font-weight: bold;
+@media only screen and (max-width:$mobile){
+    left: 10px;
+}
+& h1{
+@media only screen and (max-width:$mobile){
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: -20px;
+}
+}
+}
+& .feedback-email{
+    position: absolute;
+    color: $primary-color;
+    left: 580px;
+@media only screen and (max-width:$mobile){
+    left: 0;
+    top: 170px;
+    width: 100%;
+    padding: 10px;
+}
+& input{
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    width: 450px;
+@media only screen and (max-width:$mobile){   
+    width: 100%;
+}
+}
+& p{
+    text-align: center;
+    background-color: $primary-color;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+& a{
+    color: $background-color;
+    font-weight: bold;
+    text-decoration: none;
+& :hover{
+    background-color: red;
+    }
+}
+}
+}
+}
+}
+/*footer*/
+footer {
+    background-color: #f2f2f2;
+    padding: 100px 80px 40px 80px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.brand h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.brand p {
+    font-size: 14px;
+    color: #666;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom p {
+    color: #666;
+    font-size: 14px;
+}
+.payment-icons img {
+    width: 40px;
+    margin-left: 10px;
+}

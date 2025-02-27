@@ -1,0 +1,51 @@
+@use '../variables/variable' as *;
+.logoSm{
+    display: none;
+}
+.brand-logo{
+    position: relative;
+    top: -32px;
+    background-color: $background-color;
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+& .logoContainer{
+   
+& img{
+    width: 70rem;
+    /*brand logo image*/
+@media (min-width: $tabletMin) and 
+(max-width:$tabletMax){
+     width: 40rem;
+}
+}
+@media only screen and (max-width:$mobile){
+    .brand-logo{
+        display: none;
+    }
+}
+}
+}
+/*logo mobile brand logos*/
+@media only screen and (max-width:$mobile){
+    .brand-logo{
+        display: none;
+    }
+    .logoSm{
+        display: contents;
+    }
+    .brand-logo_sm{
+        position: relative;
+        top: -32px;
+        background-color: $background-color;
+        padding: 10px;
+        margin-top: 30px;
+        text-align: center;
+    & .logoContainer_sm{
+       
+    & img{
+        width: 20rem;
+    }
+    }
+    }
+}

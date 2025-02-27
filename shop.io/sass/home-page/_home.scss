@@ -1,0 +1,21 @@
+@use '../variables/variable' as *;
+.ads{
+    max-width: 100vw;
+    background-color:$background-color;
+    padding: 5px;
+    display: flex;
+    height: 30px;
+    font-size:$small;
+    justify-content: center;
+    align-items: center;
+    color:$primary-color ;
+&-display{
+& p{
+    margin-top: 10px;
+& a{
+    color:$primary-color;
+    font-size:$ex-small;
+}
+}
+}
+}

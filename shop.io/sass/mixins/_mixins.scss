@@ -1,0 +1,13 @@
+@use '../variables/variable' as *;
+//mobile
+@mixin for-phone {
+    @media only screen and (max-width: $mobile){
+        @content;
+    }
+}
+//tab
+@mixin for-tablet_phone {
+    @media only screen and (max-width: $tabletMax){
+        @content;
+    }
+}

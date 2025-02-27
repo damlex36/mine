@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!------for ads-->
+    <header class="ads">
+        <div class="ads-display">
+            <p>signup and get 20% off your first order. <a href="">Sign Up Now</a></p>
+        </div>
+    </header>
+    <!-----navbar-->
+    <div class="navbarPc">
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-------logo-->
+            <div class="navbar-logo">
+                <h1>SHOP.CO</h1>
+            </div>
+            <!-------dropdown-->
+            <div class="dropdown">
+                <span class="dropdown-text"><p>shop</p></span>
+                <div class="dropdown-hover">
+                    <ul class="dropdown-lists">
+                        <li><a href="">Market</a></li>
+                        <li><a href="">Clothings</a></li>
+                        <li><a href="">Cosmectics</a></li>
+                        <li><a href="">Market</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-------navs-->
+            <div class="navs">
+                <div class="navbar-container">
+                  <ul>
+                    <li><a href="">On Sale</a></li>
+                    <li><a href="">New Arrival</a></li>
+                    <li><a href="">Brand</a></li>
+                  </ul>
+                </div>
+            </div>
+            <!-------search-->
+            <div class="searchBar">
+                <input type="text" placeholder="Search For Products....">
+            </div>
+            <!-------icons cart-->
+            <div class="nav-icons">
+                <span><img class="left" src="./icons/Cart 5-1.png" alt=""></span>
+                <span><img class="right" src="./icons/Account.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--------for phone navbar-->
+    <div class="phone-nav">
+    <nav class="navPh">
+        <div class="navPhContainer">
+            <div class="navPhProduct">
+            <!------hamburger-->
+            <div class="menu-btn">
+                <span class="menu-btn_burger"></span>
+            </div>          
+            <!------logo-->
+            <div class="logoPh">
+                <h1>SHOP.CO</h1>
+            </div>
+            <!-------ICONS-->
+            <div class="iconPh">
+              <div class="searchPh"><a href=""><img src="./icons/Search-1.png" alt=""></a></div>
+              <div class="cartPh"><a href=""><img src="./icons/Cart 2.png" alt=""></a></div>
+              <div class="accountPh"><a href=""><img src="./icons/Account.png" alt=""></a></div>
+            </div>
+        </div>
+        <!-----links-->
+        <ul class="links">
+            <li class="link"><a href="">Shop</a></li>
+            <li class="link"><a href="">On Sale</a></li>
+            <li class="link"><a href="">New Arrivals</a></li>
+            <li class="link"><a href="">Brands</a></li>
+        </ul>
+        </div>
+
+    </nav>
+</div>
+    <!------for links-->
+    <div class="product-links">
+        <ul>
+            <li><a href="#">Home</a><span><i class="fa-solid fa-angle-right"></i></span></li>
+            <li><a href="#">Shop</a><span><i class="fa-solid fa-angle-right"></i></span></li>
+            <li><a href="#">Men</a><span><i class="fa-solid fa-angle-right"></i></span></li>
+            <li><a href="#" class="actives">T-shirt</a><span><i class="fa-solid fa-angle-right"></i></span></li>
+        </ul>
+    </div>
+    <!-----product img dis-->
+    <div class="gallery-cont">
+    <div class="product-gallery">
+        <!-- Thumbnails Section -->
+        <div class="thumbnails">
+            <img src="./pics/fashion1.jpg" class="thumbnail active" alt="Shirt 1">
+            <img src="./pics/fashion2.jpg" class="thumbnail" alt="Shirt 2">
+            <img src="./pics/fashion3.jpg" class="thumbnail" alt="Shirt 3">
+        </div>
+
+        <!-- Main Image Display -->
+        <div class="main-image">
+            <img id="displayed-image" src="./pics/fashion1.jpg" alt="Main Shirt">
+        </div>
+    </div>
+    <!-- products details -->
+    <div class="contain">
+        <h1>ONE LIFE GRAPHIC T-SHIRT</h1>
+        <p class="amount">$260 <span class="old-amount">$300</span> <span class="dis-count">-40%</span></p>
+        <p class="text">This graphic t-shirt is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+        
+        <p>Select Colors:</p>
+        <div class="colors">
+            <div class="color-option" style="background: #5a4a3f;" data-color="brown"></div>
+            <div class="color-option" style="background: #2f4f2f;" data-color="green"></div>
+            <div class="color-option" style="background: #202040;" data-color="blue"></div>
+        </div>
+        
+        <p>Choose Size:</p>
+        <div class="sizes">
+            <div class="size-option" data-size="Small">Small</div>
+            <div class="size-option" data-size="Medium">Med</div>
+            <div class="size-option active" data-size="Large">Lg</div>
+            <div class="size-option" data-size="X-Large">X-Lg</div>
+        </div>
+        
+        <div class="quantity">
+            <button id="decrease">-</button>
+            <span id="quantity">1</span>
+            <button id="increase">+</button>
+        </div>
+        
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    </div>
+    <!---------reviews tab-->
+    <div class="data-tab">
+        <div class="product-btn">
+            <button class="tab-button active" data-tab="product-details">Product Details</button>
+            <button class="tab-button" data-tab="reviews">Reviews</button>
+            <button class="tab-button" data-tab="faq">FAQs</button>
+        </div>
+        <!-------first content product details-->
+        <div class="product-content active" id="product-details">
+        <div class="product-content1">
+            <h1>Product Details</h1>
+            <div class="details">
+            <p>This Silver Crest Germany Commercial Grinder blender 8500W With Extra Mill 
+                 Jar is suitable for hard foods and crush even ice block. it is specially made 
+                 for food smoothening and has the ability to crush the seed of tomatoes to fine paste.
+                 it can be used for nuts, beans, maize, tomatoes, pepper.</p>
+            <p>It's so important to have the right home appliances, whether they are large or small, they help
+                 you satisfy the different needs we have around the house as well as making life so much more 
+                 comfortable for us. Here on Jumia, we have a wide range of HOME APPLIANCES to fit different areas 
+                 of your home and function efficiently well to leave you satisfied. Our home appliances include washing 
+                 machines, Air conditioners, standing fans, 
+                Freezers, Irons, water dispensers, electric kettles, juicers and Blenders.</p>
+            </div>
+        </div>
+        </div>
+        <!---second content reviews-->
+        <div class="product-content" id="reviews">
+        <div class="product-content2">
+            <div class="review-header">
+                <!---for first row-->
+                <div class="first-row">
+                    <span>All Reviews</span>
+                    <span class="amount">(451)</span>
+                </div>
+                <!---for second row-->
+                <div class="second-row">
+                    <div class="latest" id="latestBtn">
+                        latest<i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <!---for latest toggle content hover-->
+                    <div class="latest-hover hovers">
+                       <ul>
+                        <li><a href="">Older</a></li>
+                        <li><a href="">Previous</a></li>
+                       </ul>
+                    </div>
+                    <div class="write-review">Write Review</div>
+                </div>
+            </div>
+            <!----comment section-->
+            <div class="comment">
+                <!------1st-->
+                <div class="comment-container">
+                    <!-----FIRST ROW-->
+            <div class="review-comment_card">
+                <div class="review-comment_header">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="review-comment_body">
+                    <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+                    <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                </div>
+                <div class="review-comment_footer">
+                    <small>Posted on August 14, 2023</small>
+                </div>
+            </div>
+            <!--------second row-->
+            <div class="review-comment_card">
+                <div class="review-comment_header">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="review-comment_body">
+                    <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+                    <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                </div>
+                <div class="review-comment_footer">
+                    <small>Posted on August 14, 2023</small>
+                </div>
+            </div>
+             <!--------third row-->
+             <div class="review-comment_card">
+                <div class="review-comment_header">
+                    <div class="comment-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="review-comment_body">
+                    <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+                    <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                </div>
+                <div class="review-comment_footer">
+                    <small>Posted on August 14, 2023</small>
+                </div>
+            </div>
+    </div>
+      <!------2nd-->
+      <div class="comment-container">
+        <!-----FIRST ROW-->
+<div class="review-comment_card">
+    <div class="review-comment_header">
+        <div class="comment-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="review-comment_body">
+        <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+        <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+    </div>
+    <div class="review-comment_footer">
+        <small>Posted on August 14, 2023</small>
+    </div>
+</div>
+<!--------second row-->
+<div class="review-comment_card">
+    <div class="review-comment_header">
+        <div class="comment-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="review-comment_body">
+        <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+        <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+    </div>
+    <div class="review-comment_footer">
+        <small>Posted on August 14, 2023</small>
+    </div>
+</div>
+ <!--------third row-->
+ <div class="review-comment_card">
+    <div class="review-comment_header">
+        <div class="comment-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-alt"></i>
+        </div>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="review-comment_body">
+        <h3>Samantha D. <span class="verified"><i class="fa-solid fa-check-circle"></i></span></h3>
+        <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+    </div>
+    <div class="review-comment_footer">
+        <small>Posted on August 14, 2023</small>
+    </div>
+</div>
+</div>
+       <!--------load more butoon-->
+<div class="loadMore">
+    <p>Load More</p>
+</div>
+</div>
+        </div>
+    </div>
+    <!--------faqs 3rd content-->
+    <div class="product-content" id="faq">
+    <div class="product-content3">
+        <h2 class="faq-title">Frequently Asked Question</h2>    
+        <div class="faq-container">
+            <div class="faq-question">What is the return policy</div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Dolor ipsam cum in pariatur ipsa rem 
+                 voluptatem perferendis saepe rerum velit?Lorem ipsum dolor sit amet consectetur 
+                 adipisicing elit. Incidunt ipsa quis suscipit!</div>
+        </div>
+        <div class="faq-container">
+            <div class="faq-question">What is the return policy</div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Dolor ipsam cum in pariatur ipsa rem 
+                 voluptatem perferendis saepe rerum velit?Lorem ipsum dolor sit amet consectetur 
+                 adipisicing elit. Incidunt ipsa quis suscipit!</div>
+        </div>
+        <div class="faq-container">
+            <div class="faq-question">What is the return policy</div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Dolor ipsam cum in pariatur ipsa rem 
+                 voluptatem perferendis saepe rerum velit?Lorem ipsum dolor sit amet consectetur 
+                 adipisicing elit. Incidunt ipsa quis suscipit!</div>
+        </div>
+    </div>
+    </div>
+    </div>
+      <!--------new ariivals goods product-->
+      <div class="arrival-container">
+        <h2>YOU MIGHT ALSO LIKE</h2>
+        <button class="slide-btn left">&#10094;</button>
+        <div class="arrival-list">
+            <!----Product 1 -->
+            <div class="arrival-product">
+                <img src="./pics/fashion1.jpg" alt="Product 1">
+                <div class="product-title"><a href="">Berrykey Men's 2 In 1 Shirt</a></div>
+                <div class="rating">   
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="inactive">&#9733;</span>
+                    <span class="num">4.5/5</span>
+                </div>
+                <div class="product-price">₦6,642 <span class="product-old-price">₦9,800</span></div>
+            </div>
+            <!----Product 2 -->
+            <div class="arrival-product">
+                <img src="./pics/fashion2.jpg" alt="Product 1">
+                <div class="product-title"><a href="">Berrykey Men's 2 In 1 Shirt</a></div>
+                <div class="rating">   
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="inactive">&#9733;&#9733;</span>
+                    <span class="num">4.5/5</span>
+                </div>
+                <div class="product-price">₦6,642 <span class="product-old-price">₦9,800</span><span class="off">20%</span></div>
+            </div>
+            <!----Product 3 -->
+            <div class="arrival-product">
+                <img src="./pics/fashion3.jpg" alt="Product 1">
+                <div class="product-title"><a href="">Berrykey Men's 2 In 1 Shirt</a></div>
+                <div class="rating">   
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="inactive">&#9733;</span>
+                    <span class="num">4.5/5</span>
+                </div>
+                <div class="product-price">₦6,642 <span class="product-old-price">₦9,800</span></div>
+            </div>
+             <!----Product 4 -->
+             <div class="arrival-product">
+                <img src="./pics/fashion3.jpg" alt="Product 1">
+                <div class="product-title"><a href="">Berrykey Men's 2 In 1 Shirt</a></div>
+                <div class="rating">   
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="inactive">&#9733;&#9733;</span>
+                    <span class="num">4.5/5</span>
+                </div>
+                <div class="product-price">₦6,642 <span class="product-old-price">₦9,800</span><span class="off">20%</span></div>
+            </div>
+        </div>
+        <button class="slide-btn right">&#10094;</button>
+        <!------see more-->
+        <div class="load-more">
+            <span><a href="">View All</a></span>
+        </div>
+    </div>
+    <!-------footer-->
+     <!------feedback-->
+     <div class="overall">
+     <div class="feedback">
+        <div class="feedback-container">
+            <div class="feedback-text">
+                <h1>STAY UP TO DATE ABOUT <br>OUR LATEST OFFER</h1>
+            </div>
+            <div class="feedback-email">
+                <input type="email" placeholder="Enter E-mail Address">
+                <p><a href="">Subscribe To Newsletter</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section brand">
+                <h2>SHOP.CO</h2>
+                <p>We have clothes that suit your style and which you're proud to wear. From women to men.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./pics/x.png" alt="Twitter"></a>
+                    <a href="#"><img src="./pics/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="./pics/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="./pics/git.png" alt="GitHub"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Delivery Details</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Manage Deliveries</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Payments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">YouTube Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Shop.co &copy; 2000-2023, All Rights Reserved</p>
+            <div class="payment-icons">
+                <img src="./pics/mastercard.png" alt="Visa">
+                <img src="./pics/pay.png" alt="PayPal">
+                <img src="./pics/apple.jpg" alt="Apple Pay">
+                <img src="./pics/google.png" alt="Google Pay">
+            </div>
+        </div>
+    </footer>
+     </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/product.js"></script>
+</body>
+</html>

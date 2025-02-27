@@ -1,0 +1,42 @@
+/*second contents*/
+.intro-text{
+    margin-top: 30px;
+    text-align: center;
+&s{
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode',
+     Geneva, Verdana, sans-serif;
+     cursor: pointer;
+}
+&_mobile{
+    visibility: hidden;
+}
+}
+/*phone size*/
+@media screen and (max-width:$mobile){
+    .intro-text{
+        position: relative;
+        margin-top: 0px;
+        text-align: center;
+    &s{
+       visibility: hidden;
+    }
+    &_mobile{
+        visibility:visible;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        color: rgb(26, 99, 171);
+        font-size: 1.5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 
+        'Lucida Grande', 'Lucida Sans Unicode',
+         Geneva, Verdana, sans-serif;
+         cursor: pointer;
+    }
+    }
+        
+    }
+    

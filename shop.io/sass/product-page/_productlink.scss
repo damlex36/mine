@@ -1,0 +1,32 @@
+@use '../variables/variable' as *;
+.product-links{
+    padding: 10px;
+    padding-left: 39px;
+    width: 97%;
+& ul{
+    padding:20px  10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px solid #dcdcdc;
+& li{
+    list-style: none;
+& a{
+    text-decoration: none;
+    padding: 10px;
+    color: #696969;
+    font-size: $small;
+} 
+& .actives{
+    color: black;
+    font-weight: 450;
+}
+& span{
+& i {
+    font-size: 12px;
+    color: $ash;
+}
+}
+}
+}
+}

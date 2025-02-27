@@ -1,0 +1,164 @@
+@media screen and (max-width:$mobile){
+    .room_ph{
+        display: contents;
+      }
+    .single-room{
+        position: relative;
+        padding: 10px;
+        text-align: center;
+    &_container{
+        padding: 0px;
+    & .single-room_products{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    & .product-1{
+        position: relative;
+        top: 10px;
+        height: 400px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.283);
+    & img{
+        border: 2px solid $click-color;
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+    & a{
+        font-size: 25px;
+        text-decoration: none;
+        
+    }
+    & p{
+        font-size: 18px;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+    & .current{
+        position: absolute;
+        left: 140px;
+        top: 290px;
+    }
+    & .old{
+        position: absolute;
+        top:320px;
+        left: 140px;
+        text-decoration: line-through;
+    }
+    & .booking{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary-color;
+        margin-top: 70px;
+        
+    & li{
+        list-style: none;
+        margin-right: 35px;
+    }
+    }
+    }
+    }
+    }
+    }
+    /*double room */
+    .doubleRoom{
+        width: 100%;
+        padding: 10px;
+    &_container{
+        position: relative;
+    & .btn-slider{
+        padding: 10px;
+        height: 50px;
+        width: 10%;
+        border: none;
+        background-color: $click-color;
+        border-radius: 20px;
+        color: white;
+        
+    
+    }
+    & .left{
+        position: absolute;
+        top: 100px;
+        left: 13px;
+    }
+    & .right{
+        position: absolute;
+        top: 100px;
+        left: 306px;
+        transform: rotate(180deg);
+    }
+    & .doubleRoom_product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        gap: 10px;
+    & .doubleRoom_product1{
+        padding: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.283);
+        width: 100%;
+    & img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    & h1{
+        text-align: center;
+        & a{
+            font-size: 25px;
+            text-decoration: none;
+        }
+    }
+    & a{
+        font-size: 25px;
+        text-decoration: none;
+    }
+    & p{
+        font-size: 18px;
+        color: $secondary-color;
+        font-weight: bold;
+    }
+    & .doubleRoom_current{
+        text-align: center;
+    }
+    & .doubleRoom_old{
+        text-align: center;
+        text-decoration: line-through;
+    }
+    & .doubleRoom_booking{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary-color;
+        margin-top: 70px;
+    & li{
+        list-style: none;
+        margin-right: 35px;
+    }    
+    }
+    }
+    }
+    }  
+    }
+    .room-lumia{
+        margin-left: -10px;
+    }
+}
+@media screen and (min-width:$desktop) {
+    .room_ph{
+        display: none;
+      }
+}
+/*for ipad*/
+@media (min-width: 577px) and 
+(max-width:1025px){
+    .ipadOff{
+        display: none;
+    }
+}

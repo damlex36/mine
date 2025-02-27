@@ -1,0 +1,146 @@
+
+/* Product Gallery */
+.gallery-cont{
+    position: relative;
+}
+.product-gallery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    left: 60px;
+}
+
+/* Thumbnails */
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    border: 2px solid black;
+}
+
+/* Main Image */
+.main-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom Effect on Hover */
+.main-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .product-gallery {
+        flex-direction: column;
+    }
+
+    .thumbnails {
+        flex-direction: row;
+    }
+}
+/*products details*/
+.contain {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+    left: 300px;
+}
+.contain h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contain .text{
+    color: grey;
+    font-weight: 400;
+}
+.amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+.old-amount {
+    text-decoration: line-through;
+    color: grey;
+}
+.dis-count {
+    color: red;
+    background: #f8d7da;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    left: 140px;
+    top: 60px;
+}
+.colors, .sizes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.color-option{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.size-option{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.color-option.active, .size-option.active {
+    border: 2px solid black;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.quantity button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.add-to-cart {
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    position: absolute;
+    left: 130px;
+    bottom: 17px;
+}

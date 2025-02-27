@@ -1,0 +1,69 @@
+.welcome{
+    position: absolute;
+    left: 180px;
+    color: white;
+    cursor: pointer;
+    top: 170px;
+
+&-list{
+    display: flex;
+    flex-direction: column;
+
+& .welcome-lists{
+    padding:0;
+    list-style: none;
+}
+& .first{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+& .second{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+& .third{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+& .fourth{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+}
+}
+@media screen and (max-width:$mobile){
+    .welcome{
+        display: block;
+        left:0;
+        cursor: pointer;
+        top: 120px;
+        line-height: 2;
+        padding: 30px;
+    
+    &-list{
+        display: flex;
+        flex-direction: column;
+    
+    & .welcome-lists{
+        padding: 2px;
+        list-style: none;
+    }
+    & .first{
+        font-size:10px;
+    }
+    & .second{
+        font-size:15px;
+    }
+    & .third{
+        font-size: 17px;
+    }
+    & .fourth{
+        font-size: 10px;
+    }
+    }
+    }
+}

@@ -1,0 +1,140 @@
+.footer{
+    width: 100%;
+    padding: 10px;
+    background: $secondary-color;
+&-container{
+    padding: 10px;
+    margin-top: 40px;
+& .rows{
+    
+& .first{
+    color: white;
+& h1{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+& p{
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
+& .second{
+& ul{
+    list-style: none;
+& li{
+& a{
+    text-decoration: none;
+    color: white;
+}
+}
+}
+}
+& .third{
+    & ul{
+        list-style: none;
+    & li{
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    }
+    }
+    }
+    & .fourth{
+        color: white;
+    & h1{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    & .forms{
+    & form{
+    & span{
+        background-color: $click-color;
+        padding: 7px 10px;
+        width: 100%;
+    } 
+    & input{
+        padding: 5px;
+    }   
+    }
+    }
+    }
+}
+}
+}
+@media screen and (max-width:$mobile){
+    .footer{
+        position: relative;
+        text-align: center;
+        width: 100%;
+        line-height: 2;
+    &-container{
+        padding: 10px;
+        text-align: center;
+    & .rows{
+        
+    & .first{
+        color: white;
+    & h1{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    & p{
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    }
+    & .second{
+    & ul{
+        list-style: none;
+        margin-right: 17px;
+    & li{
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    }
+    }
+    }
+    & .third{
+        & ul{
+            list-style: none;
+            margin-right: 17px;
+        & li{
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+        }
+        }
+        }
+        & .fourth{
+            color: white;
+        & h1{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        & .forms{
+        & form{
+        & span{
+            background-color: $click-color;
+            padding: 7px 10px;
+            width: 100%;
+        } 
+        & input{
+            padding: 5px;
+        }   
+        }
+        }
+        }
+    }
+    }
+    }
+}
+ /*for ipad*/
+ @media (min-width: 577px) and 
+ (max-width:1025px){
+     
+ }
+ 
+     

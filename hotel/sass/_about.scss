@@ -1,0 +1,46 @@
+/*About Lumia*/
+.lumiaAbout{
+    background-color: white;
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 900px;
+    border-radius: 10px;
+    }
+    .lumiaAbout p{
+    font-size: 0.8rem;
+    font-weight: 450;
+    line-height: 30px;
+    }
+    .lumiaAbout p a{
+    color: $click-color;
+    font-weight: bold;
+    }
+    .lumiaAbout-container{
+    padding: 35px;
+    }
+    .heading  h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    .heading1 h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    .heading2 h3,.heading3 h3,.heading4 h3,.heading5 h3,.heading6 h3{
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    .heading7 li,.heading8 li,.heading9 li,.heading10 li,.heading11 li,.heading12 li, .heading13 li,
+    .heading14 li, .heading15 li,.heading16 li{
+    font-size: 0.9rem;
+    font-weight: bold;
+    }
+    @media screen and (max-width:$mobile){
+        .lumiaAbout{
+            background-color: white;
+            width: 80%;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 10px;
+            }
+    }
